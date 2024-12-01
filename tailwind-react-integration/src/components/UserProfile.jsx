@@ -2,7 +2,7 @@ function UserProfile() {
     return (
         <div className="user-profile bg-gray-100 p-4 md:p-8 md:max-w-sm md:text-xl sm:p-4 sm:p-8 max-w-xs sm:max-w-sm mx-auto my-10 sm:my-20 rounded-lg shadow-lg over:shadow-xl">
         <img
-          src="https://via.placeholder.com/150"
+          src="https://placeholder.com/"
           alt="User"
           className="rounded-full w-24 h-24 sm:w-36 sm:h-36 mx-auto sm:w-24 sm:h-24 md:w-36 md:h-36 hover:scale-110 transition-transform duration-300 ease-in-out hover:shadow-xl"
         />
