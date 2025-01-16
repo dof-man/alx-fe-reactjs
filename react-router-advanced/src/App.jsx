@@ -18,7 +18,7 @@ function App() {
   <Route path="settings" element={<ProfileSettings />} />
         </Route>
         {/* Dynamic Route Example */}
-        <Route path="/blog/:postId" element={<BlogPost />} />
+        <Route path="/blog/:Id" element={<BlogPost />} />
         {/* Redirect to home if route doesn't exist */}
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
