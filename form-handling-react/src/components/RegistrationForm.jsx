@@ -1,4 +1,4 @@
-// src/components/RegistrationForm.js
+// src/components/RegistrationForm.jsx
 import React, { useState } from 'react';
 
 const RegistrationForm = () => {
@@ -9,7 +9,7 @@ const RegistrationForm = () => {
   });
 
   const [errors, setErrors] = useState({});
-  
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -20,7 +20,7 @@ const RegistrationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    
+
     // Simple validation
     const newErrors = {};
     if (!formData.username) newErrors.username = 'Username is required';
@@ -48,7 +48,7 @@ const RegistrationForm = () => {
         />
         {errors.username && <p>{errors.username}</p>}
       </div>
-      
+
       <div>
         <label>Email:</label>
         <input
