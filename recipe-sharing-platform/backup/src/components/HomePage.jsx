@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 
-const RecipeDetail = () => {
+const HomePage = () => {
   const [recipes, setRecipes] = useState([]);
 
-
-  ["useEffect", "useParams", "data.json", "ingredients", "instructions", "image"]
   useEffect(() => {
     // Fetch data from the local JSON file
     fetch("/data.json")
@@ -40,4 +38,4 @@ const RecipeDetail = () => {
   );
 };
 
-export default RecipeDetail;
+export default HomePage;

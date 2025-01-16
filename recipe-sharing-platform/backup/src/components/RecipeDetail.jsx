@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-const RecipeDetail = () => {
+const HomePage = () => {
   const [recipes, setRecipes] = useState([]);
 
 
