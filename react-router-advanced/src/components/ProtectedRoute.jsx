@@ -1,12 +1,10 @@
-import { Navigate, Outlet } from 'react-router-dom';
-
-// Simulated authentication function
-const isAuthenticated = () => {
-  return localStorage.getItem("userToken") !== null; // Check if userToken exists
-};
+import { Navigate, Outlet } from "react-router-dom";
+import useAuth from "../hooks/useAuth"; // Import the authentication hook
 
 function ProtectedRoute() {
-  return isAuthenticated() ? <Outlet /> : <Navigate to="/login" replace />;
+  const isAuthenticated = useAuth(); // Use the custom hook
+
+  return isAuthenticated ? <Outlet /> : <Navigate to="/login" replace />;
 }
 
 export default ProtectedRoute;
