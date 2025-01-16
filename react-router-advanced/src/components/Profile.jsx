@@ -1,5 +1,5 @@
 import { Link, Outlet } from 'react-router-dom';
-
+import { BrowserRouter as Router, Route, Profile, Details, ProfileSettings} from 'react-router-dom';
 function Profile() {
   return (
     <div>
