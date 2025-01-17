@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { fetchUserData } from "../services/githubService"; // Import the function
 
 function Search() {
   const [username, setUsername] = useState("");
